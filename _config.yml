@@ -1,16 +1,17 @@
 title: "Archives of the Curious"
 tagline: "Explorations into AI, science, learning, and curiosity-driven thinking."
 description: "Personal blog by Sebastian Aguerre."
+baseurl: ""
 url: "https://sebasaguerre.github.io"
 
 # Theme
-remote_theme: "cotes2020/jekyll-theme-chirpy@v6.2.3"
+remote_theme: "cotes2020/jekyll-theme-chirpy@v7.4.1"
 paginate: 10
 
 # Author info
 author:
   name: "Sebastian Aguerre"
-  avatar: "/assets/img/profile.png"
+  #avatar: "/assets/img/profile.png"
   bio: "Curious mind exploring AI"
   location: "Netherlands"
   email: " "
