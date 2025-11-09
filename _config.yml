@@ -1,0 +1,43 @@
+title: "Archives of the Curious"
+tagline: "Explorations into AI, science, learning, and curiosity-driven thinking."
+description: "Personal blog by Sebastian Aguerre."
+url: "https://sebasaguerre.github.io"
+
+# Theme
+remote_theme: "cotes2020/jekyll-theme-chirpy@v6.2.3"
+paginate: 10
+
+# Author info
+author:
+  name: "Sebastian Aguerre"
+  avatar: "/assets/img/profile.png"
+  bio: "Curious mind exploring AI"
+  location: "Netherlands"
+  email: " "
+
+# Navigation Menu (Top Bar)
+navbar:
+  - name: Home
+    link: /
+  - name: Projects
+    link: /projects/
+  - name: Tags
+    link: /tags/
+  - name: About
+    link: /about/
+
+# Enable search + math
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-scholar
+  - jekyll-toc
+  - jekyll-mathjax
+
+markdown: kramdown
+
+# Build settings
+theme: null
