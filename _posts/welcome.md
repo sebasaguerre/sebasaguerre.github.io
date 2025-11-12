@@ -2,6 +2,7 @@
 title: "Welcome to Archives of the Curious"
 date: 2025-11-09
 tags: [welcome]
+math: true # one needs to 
 ---
 
 Thanks for visiting 👋

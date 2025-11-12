@@ -28,16 +28,16 @@ navbar:
     link: /about/
 
 # Enable search + math
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-archives
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-scholar
-  - jekyll-toc
-  - jekyll-mathjax
+# plugins:
+#   - jekyll-remote-theme
+#   - jekyll-seo-tag
+#   - jekyll-sitemap
+#   - jekyll-archives
+#   - jekyll-feed
+#   - jekyll-paginate
+#   - jekyll-scholar
+#   - jekyll-toc
+#   - jekyll-mathjax
 
 markdown: kramdown
 
