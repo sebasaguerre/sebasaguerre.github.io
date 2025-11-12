@@ -2,9 +2,14 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
 
-group :jekyll_plugins d0:
-  gem "jekyll-feed"
+group :jekyll_plugins do
+  gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "jekyll-remote-theme"
+  gem "jekyll-feed"
+  gem "jekyll-archives"
+  gem "jekyll-paginate"
+  gem "jekyll-scholar"
+  gem "jekyll-toc"
+  gem "jekyll-mathjax"
 end
