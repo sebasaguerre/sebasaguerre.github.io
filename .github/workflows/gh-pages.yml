@@ -8,31 +8,25 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    # Grant necessary permissions for deployment
+    permissions:
+      contents: write
+      
     steps:
-      # Step 1: Get the repository
       - uses: actions/checkout@v3
 
-      # Step 2: Set up Ruby
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2 # modern Ruby for Jekyll 4+
+          ruby-version: '3.2'
+          bundler-cache: true # This automatically handles 'bundle install' and caching
 
-      # Step 3: Install Bundler
-      - name: Install Bundler
-        run: gem install bundler
+      # Step 3 & 4 from your original are now handled by 'bundler-cache: true'
 
-      # Step 4: Install dependencies
-      - name: Install dependencies
-        run: bundle install
-
-      # Step 5: Build the site
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
-      # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
