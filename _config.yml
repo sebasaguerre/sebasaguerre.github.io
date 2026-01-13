@@ -7,6 +7,7 @@ url: "https://sebasaguerre.github.io"
 # Theme
 remote_theme: "cotes2020/jekyll-theme-chirpy@v7.4.1"
 paginate: 10
+math: true 
 
 # Author info
 author:
@@ -37,9 +38,7 @@ plugins:
   - jekyll-paginate
   - jekyll-scholar
   - jekyll-include-cache
-  - jekyll-mathjax
   #- jekyll-toc
-  - jekyll-mathjax
 
 markdown: kramdown
 
