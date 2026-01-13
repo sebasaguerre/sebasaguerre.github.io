@@ -5,7 +5,8 @@ baseurl: ""
 url: "https://sebasaguerre.github.io"
 
 # Theme
-remote_theme: "cotes2020/jekyll-theme-chirpy@v7.4.1"
+theme: jekyll-theme-chirpy
+#remote_theme: "cotes2020/jekyll-theme-chirpy@v7.4.1"
 paginate: 10
 math: true 
 
@@ -30,7 +31,7 @@ navbar:
 
 #Enable search + math
 plugins:
-  - jekyll-remote-theme
+  # - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-archives
@@ -41,6 +42,3 @@ plugins:
   #- jekyll-toc
 
 markdown: kramdown
-
-# Build settings
-theme: null

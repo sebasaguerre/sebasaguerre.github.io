@@ -1,8 +1,0 @@
----
-layout: home
-title: home
----
-
-Welcome 👋
-
-This space is dedicated to exploring ideas in **AI**, **science**, learnign, and curiosity-driven thinking
