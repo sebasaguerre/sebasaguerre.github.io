@@ -37,6 +37,7 @@ plugins:
   - jekyll-paginate
   - jekyll-scholar
   - jekyll-include-cache
+  - jekyll-mathjax
   #- jekyll-toc
   - jekyll-mathjax
 
