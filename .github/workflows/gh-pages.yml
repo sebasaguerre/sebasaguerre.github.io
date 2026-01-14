@@ -4,29 +4,38 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # This allows you to run it manually if needed
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-    # Grant necessary permissions for deployment
-    permissions:
-      contents: write
-      
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true # This automatically handles 'bundle install' and caching
-
-      # Step 3 & 4 from your original are now handled by 'bundler-cache: true'
+          bundler-cache: true
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        id: deployment
+        uses: actions/deploy-pages@v4
