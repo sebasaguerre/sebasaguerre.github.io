@@ -3,6 +3,7 @@ tagline: "Explorations into AI, science, learning, and curiosity-driven thinking
 description: "Personal blog by Sebastian Aguerre."
 baseurl: ""
 url: "https://sebasaguerre.github.io"
+timezone: Europe/Amsterdam
 
 # Theme
 theme: jekyll-theme-chirpy
@@ -16,7 +17,7 @@ author:
   #avatar: "/assets/img/profile.png"
   bio: "Curious mind exploring AI"
   location: "Netherlands"
-  email: " "
+  email: ""
 
 # Navigation Menu (Top Bar)
 navbar:
